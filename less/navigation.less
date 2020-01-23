@@ -1,1 +1,19 @@
 // Navigation Styles here
+nav{
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    width:100%;
+    margin:0 auto;
+    div{padding:20px;}
+    .logo{width:80%}
+    border-bottom: dashed silver 3px;
+
+    @media @mobile{
+
+        flex-direction: column;
+        text-align: center;
+        .logo{width:auto;}
+        .m{flex-direction: row;display: flex;justify-content: center;}
+    }
+}

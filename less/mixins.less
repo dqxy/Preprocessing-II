@@ -1,1 +1,16 @@
 // Mixins in here
+
+.smu(@c){
+    text-align: center;
+    font-size: 1.6rem;
+    padding-bottom: 10px;
+    color:@c;
+    background-color: green;
+    border-radius: 25px;
+    padding: 20px;
+  }
+
+  .btn
+  {
+      .smu(@white);
+}
