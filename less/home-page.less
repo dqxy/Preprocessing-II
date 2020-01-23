@@ -1,10 +1,25 @@
 .home {
 
+  header{border-bottom: dashed silver 3px;
+  
+    @media @mobile {width: 80%;margin:0 auto};
+  }
+
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @mobile{
+
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+
+     
+  }
 
    
     
@@ -26,6 +41,13 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+
+      flex-direction: column-reverse;
+      text-align: center;
+      align-items: center;
+  }
 
     .text-content {
       padding-left: 1%;
@@ -53,9 +75,18 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+  }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile {width: 80%};
     }
   }
 }// home
